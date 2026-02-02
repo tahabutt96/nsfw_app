@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "169189492288",
+    "project_id": "nsfw-2026",
+    "storage_bucket": "nsfw-2026.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169189492288:android:74b4554bb8f90487ea01a5",
+        "android_client_info": {
+          "package_name": "com.lifelessons.nsfw"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB62X5_PIZYB5ZXldE42EiDXRZzcpP4_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
