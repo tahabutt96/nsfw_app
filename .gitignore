@@ -43,18 +43,3 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-
-node_modules
-
-# FVM Version Cache
-.fvm/
-
-# Compiled binary files
-*.bin
-
-# Ignore entire CXX build folder
-android/app/.cxx/
-
-**/GeneratedPluginRegistrant.*
-**/generated_plugin_registrant.*
-**/generated_plugins.cmake
