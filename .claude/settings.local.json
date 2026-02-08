@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(flutter pub get:*)"
+      "Bash(flutter pub get:*)",
+      "Bash(firebase:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npm install:*)",
+      "Bash(dart pub global activate:*)",
+      "Bash(\"%LOCALAPPDATA%\\\\Pub\\\\Cache\\\\bin\\\\flutterfire.bat\" --version)",
+      "Bash(C:/Users/tahab/AppData/Local/Pub/Cache/bin/flutterfire.bat --version)",
+      "Bash(C:/Users/tahab/AppData/Local/Pub/Cache/bin/flutterfire.bat configure --project=nsfw-2026 --platforms=android --android-package-name=com.lifelessons.nsfw --yes)"
     ]
   }
 }
