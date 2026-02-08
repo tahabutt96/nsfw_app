@@ -52,4 +52,5 @@ dependencies {
   // Firebase products (versions managed by BoM)
   implementation("com.google.firebase:firebase-analytics")
   implementation("com.google.firebase:firebase-crashlytics")
+  implementation("com.google.firebase:firebase-firestore")
 }

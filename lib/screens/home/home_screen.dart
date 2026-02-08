@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../config/app_constants.dart';
 import '../../services/analytics_service.dart';
 import '../../services/crashlytics_service.dart';
+import '../firestore_test/firestore_test_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -52,6 +53,13 @@ class _HomeScreenState extends State<HomeScreen> {
     CrashlyticsService().testCrash();
   }
 
+  void _openFirestoreTest() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const FirestoreTestScreen()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -90,6 +98,14 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               icon: const Icon(Icons.dangerous),
               label: const Text('Trigger Fatal Crash'),
+            ),
+            const SizedBox(height: 32),
+            const Divider(),
+            const SizedBox(height: 16),
+            ElevatedButton.icon(
+              onPressed: _openFirestoreTest,
+              icon: const Icon(Icons.storage),
+              label: const Text('Test Firestore'),
             ),
           ],
         ),
