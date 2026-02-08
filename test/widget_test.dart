@@ -8,13 +8,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:nsfw_app/main.dart';
+import 'package:nsfw_app/core/app.dart';
 import 'package:nsfw_app/services/analytics_service.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp(analyticsService: AnalyticsService()));
+    await tester.pumpWidget(App(analyticsService: AnalyticsService()));
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
